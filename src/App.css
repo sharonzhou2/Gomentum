@@ -1,0 +1,136 @@
+.App {
+  font-family: montserrat, sans-serif;
+  color: whitesmoke;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.Hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.Hero h1 {
+  color: whitesmoke;
+  font-size: 50pt;
+}
+
+.Time h1 {
+  margin: 0px;
+  font-size: 100pt;
+}
+
+.Time p {
+  font-size: 12pt;
+  margin: auto;
+  
+}
+body {
+  /* src/components/images/background.jpg */
+  background-image: url('components/images/background.jpg');
+  /* background-image: url("https://picsum.photos/2500/1656?random=1"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-main {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.weather-main h1 {
+  font-size: 15pt;
+}
+
+.weather-details {
+  margin: 20px;
+  width: 120px;
+  text-align: left;
+}
+
+.weather-detail-element {
+  font-size: 15pt;
+}
+
+.weather-detail-label {
+  /* text-align: center; */
+  font-size: 8pt;
+}
+
+.temperature h1 {
+
+  
+  font-size: 30pt;
+  font-weight: bolder;
+}
+
+.temp-icon {
+  /* margin-left: 40px; */
+}
+
+.search input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  font-size: 18px;
+  font-family: montserrat;
+  color: whitesmoke;
+  text-align: center;
+  
+}
+
+.search i {
+  cursor: pointer;
+}
+
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: whitesmoke;
+}
+
+.quotes {
+  font-size: 15pt;
+}
+
+.quotes .quote-content{
+  font-style: italic;
+}
+
+.name-input input{
+  background: none;
+  border: none;
+  border-bottom: 4px solid whitesmoke;
+  width: 100%;
+  font-size: 18px;
+  font-family: montserrat;
+  color: whitesmoke;
+  font-size: 30pt;
+  text-align: center;
+
+}
+
+.footer a {
+  text-decoration: none;
+  color: aliceblue;
+}
