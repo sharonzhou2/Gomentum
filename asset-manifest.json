@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Gomentum/static/css/main.2bf30915.chunk.css",
-    "main.js": "/Gomentum/static/js/main.d9b1522e.chunk.js",
-    "main.js.map": "/Gomentum/static/js/main.d9b1522e.chunk.js.map",
+    "main.js": "/Gomentum/static/js/main.3236e691.chunk.js",
+    "main.js.map": "/Gomentum/static/js/main.3236e691.chunk.js.map",
     "runtime-main.js": "/Gomentum/static/js/runtime-main.b2654a57.js",
     "runtime-main.js.map": "/Gomentum/static/js/runtime-main.b2654a57.js.map",
     "static/css/2.a1596f27.chunk.css": "/Gomentum/static/css/2.a1596f27.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.a1596f27.chunk.css",
     "static/js/2.4757b515.chunk.js",
     "static/css/main.2bf30915.chunk.css",
-    "static/js/main.d9b1522e.chunk.js"
+    "static/js/main.3236e691.chunk.js"
   ]
 }
