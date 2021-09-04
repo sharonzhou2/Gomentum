@@ -1,3 +1,5 @@
+
+
 .App {
   font-family: montserrat, sans-serif;
   color: whitesmoke;
@@ -8,6 +10,11 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+.disableScroll{
+  overflow-y:hidden;
+  overflow-x:hidden;
 }
 
 .Hero {
@@ -35,14 +42,47 @@ button:focus {
   
 }
 body {
-  /* src/components/images/background.jpg */
-  background-image: url('components/images/background.jpg');
-  /* background-image: url("https://picsum.photos/2500/1656?random=1"); */
+  /* background-image: url('components/images/background.jpg'); */
+  background-image: url("https://picsum.photos/2500/1656?random=1");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
   height: 100vh;
+}
+
+.layer {
+  background-color: rgba(34, 33, 33, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.btn button {
+  
+  background-color: transparent;
+  font-family: montserrat;
+  color: whitesmoke;
+  font-size: 11pt;
+  padding: 10px;
+  border: 2px solid whitesmoke;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  border: 5px solid whitesmoke;
+  /* font-size: 20pt; */
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+
 }
 
 .weather {
@@ -75,10 +115,9 @@ body {
 }
 
 .temperature h1 {
-
-  
   font-size: 30pt;
   font-weight: bolder;
+  letter-spacing: 2px;
 }
 
 .temp-icon {
@@ -98,6 +137,25 @@ body {
 
 .search i {
   cursor: pointer;
+}
+
+.todos {
+  overflow: auto;
+  height: 175px;
+}
+
+.todo-element {
+  border: 1px solid white;
+  margin: 5px;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.back-icon {
+  display: flex;
+  justify-content: flex-end;
 }
 
 

@@ -1,4 +1,5 @@
 import './App.css';
+import "animate.css";
 import Hero from './components/Hero';
 import Weather from './components/Weather';
 import { useState, useEffect } from 'react';
@@ -70,7 +71,13 @@ function App() {
 
   }, [])
   const fetchWeather = async (city) => {
-    const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=metric`);
+    let url = ''
+    if (window.location.protocol === 'http:') {
+      url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=metric`;
+   } else {
+      url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=metric`;
+   }
+    const res = await fetch(url);
     if (handleRequests(res)) {
       return 1;
     }
@@ -113,10 +120,10 @@ function App() {
 
 
   return (
-    <div className="App" >
+    <div className="App layer" >
       
 
-      <Hero quotes={quotes} name={name} onSetName={setName}></Hero>
+      <Hero quotes={quotes} name={name} onSetName={setName} weather={JSON.parse(weather)}></Hero>
       <Weather weather={JSON.parse(weather)} onChangeCity={changeCity}></Weather>
       <Footer></Footer>
     </div>

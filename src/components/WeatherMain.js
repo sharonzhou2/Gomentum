@@ -10,7 +10,6 @@ const WeatherMain = ({main, location, weather, sys, onChangeCity}) => {
         <div className="weather-main">
             <p>{location}, {sys.country}</p>
             <Search onChangeCity={onChangeCity}></Search>
-
             <Temperature weather={main}></Temperature>
             <TemperatureInfo weather={weather}></TemperatureInfo>
 

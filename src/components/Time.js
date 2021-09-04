@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-const Time = () => {
+const Time = ({country}) => {
     const getTime = () => {
-        let time = new Date().toLocaleTimeString('en-US', { hour12: false, 
+        let time = new Date().toLocaleTimeString(`en-AU`, { hour12: false, 
             hour: "numeric", 
             minute: "numeric"});
         return time;
@@ -11,7 +11,7 @@ const Time = () => {
 
     const getDate= () => {
         var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        let date = new Date().toLocaleDateString('en-AU', options);
+        let date = new Date().toLocaleDateString(`en-AU`, options);
         return date
     }
   
