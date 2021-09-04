@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/Gomentum/static/css/main.37d79196.chunk.css",
-    "main.js": "/Gomentum/static/js/main.d24b9631.chunk.js",
-    "main.js.map": "/Gomentum/static/js/main.d24b9631.chunk.js.map",
+    "main.css": "/Gomentum/static/css/main.2bf30915.chunk.css",
+    "main.js": "/Gomentum/static/js/main.d9b1522e.chunk.js",
+    "main.js.map": "/Gomentum/static/js/main.d9b1522e.chunk.js.map",
     "runtime-main.js": "/Gomentum/static/js/runtime-main.b2654a57.js",
     "runtime-main.js.map": "/Gomentum/static/js/runtime-main.b2654a57.js.map",
-    "static/js/2.0d7f3cf7.chunk.js": "/Gomentum/static/js/2.0d7f3cf7.chunk.js",
-    "static/js/2.0d7f3cf7.chunk.js.map": "/Gomentum/static/js/2.0d7f3cf7.chunk.js.map",
+    "static/css/2.a1596f27.chunk.css": "/Gomentum/static/css/2.a1596f27.chunk.css",
+    "static/js/2.4757b515.chunk.js": "/Gomentum/static/js/2.4757b515.chunk.js",
+    "static/js/2.4757b515.chunk.js.map": "/Gomentum/static/js/2.4757b515.chunk.js.map",
     "index.html": "/Gomentum/index.html",
-    "static/css/main.37d79196.chunk.css.map": "/Gomentum/static/css/main.37d79196.chunk.css.map",
-    "static/js/2.0d7f3cf7.chunk.js.LICENSE.txt": "/Gomentum/static/js/2.0d7f3cf7.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Gomentum/static/media/background.be4264c7.jpg"
+    "static/css/2.a1596f27.chunk.css.map": "/Gomentum/static/css/2.a1596f27.chunk.css.map",
+    "static/css/main.2bf30915.chunk.css.map": "/Gomentum/static/css/main.2bf30915.chunk.css.map",
+    "static/js/2.4757b515.chunk.js.LICENSE.txt": "/Gomentum/static/js/2.4757b515.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b2654a57.js",
-    "static/js/2.0d7f3cf7.chunk.js",
-    "static/css/main.37d79196.chunk.css",
-    "static/js/main.d24b9631.chunk.js"
+    "static/css/2.a1596f27.chunk.css",
+    "static/js/2.4757b515.chunk.js",
+    "static/css/main.2bf30915.chunk.css",
+    "static/js/main.d9b1522e.chunk.js"
   ]
 }
