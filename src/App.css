@@ -232,10 +232,14 @@ body {
 }
 .quotes {
   font-size: 15pt;
+  max-height: 200px;
+  overflow: hidden;
+  
 }
 
 .quotes .quote-content{
   font-style: italic;
+  text-overflow: ellipsis;
 }
 
 .name-input input{
