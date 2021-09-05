@@ -1,14 +1,23 @@
 import React from 'react'
 
-const Button = ({text, onHandleClick, onSetActivity}) => {
+const Button = ({text, onHandleClick, onSetActivity, icon}) => {
+    // const [mouseEvent, setMouseEvent] = useState({
+    //     "Search": false,
+    //     "Pomodoro": false,
+    //     "To-do": false,
+
+    // })
     const handleButton = () => {
-        console.log(text);
         onHandleClick();
         onSetActivity(text);
     }
+    // const mouseOverEvent = () => {
+
+    // }
     return (
-        <div className="btn">
-            <button onClick={handleButton}>{text}</button>
+        <div className="icon-btn">
+            {/* <button className="btn" onClick={handleButton}>{text}</button> */}
+            <i className={icon} onClick={handleButton} ></i>
  
         </div>
     )

@@ -6,7 +6,7 @@ import Buttons from './Buttons'
 import Activity from './Activity'
 import { useState } from 'react'
 const Hero = (props) => {
-    const [showButtons, setShowButtons] = useState(true)
+    const [showButtons, setShowButtons] = useState(true);
     const [activity, setActivity] = useState('');
 
     const handleClick = () => {
@@ -16,9 +16,17 @@ const Hero = (props) => {
     return (
         <div className="Hero">
             <Time country={props.weather.sys.country}></Time>
-            {props.name === ''? <NameInput onSetName={props.onSetName}/>: <h1 className="animate__animated animate__fadeInUp">Welcome {props.name}</h1>}
+            {showButtons ? 
+                <div>
+                    {props.name === ''? <NameInput onSetName={props.onSetName}/>: <h1 className="animate__animated animate__fadeInUp">Welcome {props.name}</h1>}
+                </div>
+            : ''}         
+        
+                
+            {showButtons ? <Buttons onHandleClick={handleClick} onSetActivity={setActivity}></Buttons> : <Activity activity={activity} onSetShowButtons={setShowButtons}></Activity>}
+    
             
-            {showButtons ? <Buttons onHandleClick={handleClick} onSetActivity={setActivity}></Buttons> : <Activity activity={activity}></Activity>}
+           
             <Quotes quotes={props.quotes}></Quotes>
         </div>
     )

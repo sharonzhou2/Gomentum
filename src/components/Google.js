@@ -10,8 +10,7 @@ const Google = () => {
         }
     }
     return (
-        <div className="search">
-            <div className="gcse-search"></div>
+        <div className="search hero-search">
             <input type="text" placeholder="Search" onKeyDown={handleSearch}></input>
         </div>
     )
